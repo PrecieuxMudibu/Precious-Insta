@@ -1,0 +1,126 @@
+.login { 
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100%;
+    padding: auto 0;
+}
+
+.login__left {
+    /* height: 80%; */
+    /* border: 1px solid; */
+    margin-right: 5%;
+    width: 20%;
+}
+
+.login__smartphone {
+    width: 100%;
+}
+
+.login__right {
+    width: 30%;
+}
+
+.login__right-top {
+    background-color: #FFF;
+    border: 1px solid#DBDBDB;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0;
+}
+
+.login__instagram {
+    margin: 4% 0;
+    align-self: center;
+    width: 40%;
+}
+
+.login__input {
+    display:block;
+    outline: none;
+    height: 2.5rem;
+    margin: 2% auto;
+    width: 88%;
+    border: 1px solid #DBDBDB;
+    padding: 0 .5rem;
+}
+
+.login__button {
+    display:block;
+    width: 88%;
+    margin: 6% auto;
+    border: none;
+    height: 2rem;
+    border-radius: .2rem;
+    background-color: #C1D8FE;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.login__or-section {
+    margin: 0 auto;
+    width: 88%;
+    display: grid;
+    grid-template-columns: 40% 10% 40%;
+    grid-gap: 5%;
+}
+
+.login__or-section span {
+    height: 1px;
+    background-color: grey;
+    margin: auto 0;
+}
+
+.login__facebook-connection {
+    text-decoration: none;
+    font-weight: bold;
+    color: #404487;
+    margin:6%;
+    text-align: center;
+}
+
+.login__password-forgotten {
+    color: #673698;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login__right-middle {
+    background-color: white;
+    font-size: .9rem;
+    border: 1px solid#DBDBDB;
+    margin: 2% 0;
+    padding: 5% 6%;
+    text-align: center;
+}
+
+.login__instagram-register {
+    font-weight: bold;
+    text-decoration: none;
+    color:#307FFA;
+}
+
+.login__right-bottom {
+    background-color: #FFF;
+    text-align: center;
+}
+
+.login__right-bottom p {
+    margin: 5%;
+    font-size: .9rem;
+}
+
+.login__image-app-store {
+    margin-right: 1rem;
+}
+
+.login__image-app-store, .login__image-google-play {
+    width: 8rem;
+}
