@@ -23,7 +23,7 @@
 }
 
 .login__right {
-    width: 30%;
+    width: 25%;
 }
 
 .login__right-top {
@@ -108,7 +108,6 @@
 }
 
 .login__right-bottom {
-    background-color: #FFF;
     text-align: center;
 }
 
