@@ -1,11 +1,11 @@
 .publication {
     width: 100%;
     margin-top: 3%;
-    /* height: 20rem; */
     background: white;
     border-radius: .5rem;
     padding-bottom: 1rem; 
     border: 1px solid var(--grey2);
+    font-size: .9rem;
 }
 
 .publication__publisher { 
@@ -17,8 +17,6 @@
     margin: 2%;
     display: flex;
     align-items: center;
-    font-size: .8rem;
-    font-weight: bold;
 }
 
 .publication__publisher div img {
@@ -54,7 +52,6 @@
 }
 
 .publication__number-of-like {
-    font-weight: bold;
     margin: 2% 0;
 }
 
@@ -85,13 +82,4 @@
     border: none;
     font-size: .9rem;
     width: 75%;
-    margin-right: 1rem;
-}
-
-.publication_input-group button {
-    background: none;
-    border: none;
-    color:var(--blueDisable) ;
-    font-size: .9rem;
-    font-weight: bold;
 }

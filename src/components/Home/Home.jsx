@@ -45,7 +45,6 @@ export default function Home() {
         <div className="current-user">
           <div className="current-user__infos">
             <img src={instagram} alt="" />
-            {/* <BsPersonCircle className="home__link-icon" /> */}
             <div className="current-user__name">
               <p>precieuxbishiya</p>
               <p>Précieux Bishiya</p>
