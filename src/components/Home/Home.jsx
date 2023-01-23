@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 import MenuLink from '../MenuLink/MenuLink';
 import { useEffect } from 'react';
 import { BsInstagram } from 'react-icons/bs';
+
+import photos from '../../images/list_of_images';
+import { suggested_contacts } from '../../images/list_of_images';
+
 export default function Home() {
   let repeat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   const menuList = [
@@ -54,17 +58,17 @@ export default function Home() {
             ))}
           </div>
 
-          {repeat.map((element) => (
-            <PublicationCard />
+          {photos.map((photo) => (
+            <PublicationCard source={photo.source} name={photo.name} profile_picture={photo.profile_picture} />
           ))}
         </div>
 
         <div className="current-user">
           <div className="current-user__infos">
-            <img src={instagram} alt="" />
+            <img src={photos[0].profile_picture} alt="" />
             <div className="current-user__name">
-              <p className="text-bold">precieuxbishiya</p>
-              <p className="grey">Précieux Bishiya</p>
+              <p className="text-bold">Fun_Dev</p>
+              <p className="grey">{photos[0].name}</p>
             </div>
             <button className="button">Basculer</button>
           </div>
@@ -79,11 +83,10 @@ export default function Home() {
 
             <div>
               <ul>
-                <SuggestedContact />
-                <SuggestedContact />
-                <SuggestedContact />
-                <SuggestedContact />
-                <SuggestedContact />
+                {suggested_contacts.map((suggested_contact)=>
+                <SuggestedContact name={suggested_contact.name} source={suggested_contact.profile_picture} />
+                )}
+             
               </ul>
             </div>
           </div>
