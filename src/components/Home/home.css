@@ -4,6 +4,10 @@
     --grey3: #8E8E92;
     --blueDisable : #b5E2FF;
     --blue: #0095F6;
+
+    --size14: 1.4rem;
+    --size16: 1.6rem;
+    --smallSize: 1.2rem;
 }
 
 ::-webkit-scrollbar {
@@ -26,13 +30,7 @@
     /* font-size: 2rem; */
     width: 45%;
 }
-.home__link {
-    list-style: none;
-margin: 14% 0;
-display: flex;
-align-items: center;
-cursor: pointer;
-}
+
 .publication__number-of-like {
     font-weight: bold;
     margin: 2% 0;
@@ -46,7 +44,7 @@ cursor: pointer;
 }
 
 .home__link > span {
-margin-left: 1rem;
+    margin-left: 1rem;
 }
 
 .home__right {
