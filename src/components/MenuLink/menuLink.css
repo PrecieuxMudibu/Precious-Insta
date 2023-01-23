@@ -6,3 +6,31 @@
     cursor: pointer;
     color: var(--size16);
 }
+
+@media screen and (max-width: 1000px) {
+    .home__link {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home__link > span {
+        display: none;
+    }
+
+    .home__link-icon {
+        margin: 14% 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .home {
+        flex-direction: column-reverse;
+     }
+    
+     .home__link {
+        display: grid;
+     }
+
+   
+}
