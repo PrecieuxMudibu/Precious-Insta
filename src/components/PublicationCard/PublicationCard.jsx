@@ -6,19 +6,19 @@ import { FiSend, FiMessageCircle } from 'react-icons/fi';
 import { FaRegHeart } from 'react-icons/fa';
 import { FiMoreHorizontal } from 'react-icons/fi';
 
-export default function PublicationCard() {
+export default function PublicationCard({name, source, profile_picture}) {
   return (
     <div className="publication">
       <div className="publication__publisher">
         <div>
-          <img src={instagram} alt="" />
-          <p className="text-bold">Keke__</p>
+          <img src={profile_picture} alt="" />
+          <p className="text-bold">{name}</p>
         </div>
         <div>
           <FiMoreHorizontal className="publication__icon" />
         </div>
       </div>
-      <img src={itachi} alt="" />
+      <img src={source} alt="" />
       <div className="publication__footer">
         <div className="icons">
           <div>
