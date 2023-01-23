@@ -5,6 +5,7 @@ import Login from './components/Login/Login';
 const App = () => (
   <div className="App">
     <Home />
+    {/* <Login /> */}
   </div>
 );
 

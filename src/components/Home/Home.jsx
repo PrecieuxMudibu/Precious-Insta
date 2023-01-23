@@ -1,23 +1,15 @@
 import instagram from '../../images/instagramText.png';
-import itachi from '../../images/itachi_cries.jpg';
 import './home.css';
 import StatusHeaderCard from '../StatusHeaderCard/StatusHeaderCard';
 import PublicationCard from '../PublicationCard/PublicationCard';
 import { AiFillHome } from 'react-icons/ai';
-import {
-  BsSearch,
-  BsPersonCircle,
-  BsBookmark,
-  BsEmojiSmile,
-} from 'react-icons/bs';
+import { BsSearch, BsPersonCircle } from 'react-icons/bs';
 import { BiCompass } from 'react-icons/bi';
-import { FiSend, FiMessageCircle } from 'react-icons/fi';
+import { FiSend } from 'react-icons/fi';
 import { FaRegHeart } from 'react-icons/fa';
 import { MdOutlineAddBox } from 'react-icons/md';
 import { GoThreeBars } from 'react-icons/go';
-import { FiMoreHorizontal } from 'react-icons/fi';
-// import {IoPersonCircleOutline} from 'react-icons/io'
-
+import { Link } from 'react';
 export default function Home() {
   let repeat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   return (
@@ -61,6 +53,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
+
       <div className="home__right">
         <div className="home__publications">
           <div className="home__header">
@@ -72,6 +65,52 @@ export default function Home() {
           {repeat.map((element) => (
             <PublicationCard />
           ))}
+        </div>
+
+        <div className="current-user">
+          <div className="current-user__infos">
+            <img src={instagram} alt="" />
+            {/* <BsPersonCircle className="home__link-icon" /> */}
+            <div className="current-user__name">
+              <p>precieuxbishiya</p>
+              <p>Précieux Bishiya</p>
+            </div>
+            <button>Basculer</button>
+          </div>
+
+          <div className="current-user__suggestions">
+            <div>
+              <p>Suggestions pour vous</p>
+              <button>Voir tout</button>
+            </div>
+            
+            <div>
+              <ul>
+                <li className="suggested-contacts">
+                  <img src={instagram} />
+                  <div>
+                    <p className="suggested-contacts__name">g1_faveur</p>
+                    <p>Suivi(e) par sabrinabaelongandi + 3 autres</p>
+                  </div>
+                  <button>Voir tout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* <div className="current-user__links">
+            <Link>A propos</Link>
+            <Link>Aide</Link>
+            <Link>Presse</Link>
+            <Link>API</Link>
+            <Link>Emplois</Link>
+            <Link>Confidentialité</Link>
+            <Link>Conditions</Link>
+            <Link>Lieux</Link>
+            <Link>Langue</Link>
+          </div>
+
+          <p>© 2023 INSTAGRAM PAR META</p> */}
         </div>
       </div>
     </div>

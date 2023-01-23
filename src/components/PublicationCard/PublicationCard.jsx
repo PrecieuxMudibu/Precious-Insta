@@ -2,16 +2,11 @@ import './publicationCard.css'
 import instagram from '../../images/instagramText.png';
 import itachi from '../../images/itachi_cries.jpg';
 import {
-  BsSearch,
-  BsPersonCircle,
   BsBookmark,
   BsEmojiSmile,
 } from 'react-icons/bs';
-import { BiCompass } from 'react-icons/bi';
 import { FiSend, FiMessageCircle } from 'react-icons/fi';
 import { FaRegHeart } from 'react-icons/fa';
-import { MdOutlineAddBox } from 'react-icons/md';
-import { GoThreeBars } from 'react-icons/go';
 import { FiMoreHorizontal } from 'react-icons/fi';
 
 export default function PublicationCard() {
