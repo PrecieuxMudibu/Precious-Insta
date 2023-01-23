@@ -1,8 +1,9 @@
 import instagram from '../../images/instagramText.png';
 import './home.css';
+import SuggestedContact from '../SuggestedContact/SuggestedContact';
 import StatusHeaderCard from '../StatusHeaderCard/StatusHeaderCard';
 import PublicationCard from '../PublicationCard/PublicationCard';
-import { Link } from 'react';
+import { Link } from 'react-router-dom';
 import MenuLink from '../MenuLink/MenuLink';
 export default function Home() {
   let repeat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
@@ -46,45 +47,52 @@ export default function Home() {
           <div className="current-user__infos">
             <img src={instagram} alt="" />
             <div className="current-user__name">
-              <p>precieuxbishiya</p>
-              <p>Précieux Bishiya</p>
+              <p className="text-bold">precieuxbishiya</p>
+              <p className="grey">Précieux Bishiya</p>
             </div>
-            <button>Basculer</button>
+            <button className="button">Basculer</button>
           </div>
 
           <div className="current-user__suggestions">
-            <div>
-              <p>Suggestions pour vous</p>
+            <div className="flex">
+              <p className="current-user__suggestions-title">
+                Suggestions pour vous
+              </p>
               <button>Voir tout</button>
             </div>
 
             <div>
               <ul>
-                <li className="suggested-contacts">
-                  <img src={instagram} />
-                  <div>
-                    <p className="suggested-contacts__name">g1_faveur</p>
-                    <p>Suivi(e) par sabrinabaelongandi + 3 autres</p>
-                  </div>
-                  <button>Voir tout</button>
-                </li>
+                <SuggestedContact />
+                <SuggestedContact />
+                <SuggestedContact />
+                <SuggestedContact />
+                <SuggestedContact />
               </ul>
             </div>
           </div>
 
-          {/* <div className="current-user__links">
-            <Link>A propos</Link>
-            <Link>Aide</Link>
-            <Link>Presse</Link>
-            <Link>API</Link>
-            <Link>Emplois</Link>
-            <Link>Confidentialité</Link>
-            <Link>Conditions</Link>
-            <Link>Lieux</Link>
-            <Link>Langue</Link>
+          <div className="current-user__links">
+            <Link className="small-text">A propos<span> ● </span></Link>
+
+            <Link className="small-text">Aide<span> ● </span></Link>
+
+            <Link className="small-text">Presse<span> ● </span></Link>
+
+            <Link className="small-text">API<span> ● </span></Link>
+
+            <Link className="small-text">Emplois<span> ● </span></Link>
+
+            <Link className="small-text">Confidentialité<span> ● </span></Link>
+
+            <Link className="small-text">Conditions<span> ● </span></Link>
+
+            <Link className="small-text">Lieux<span> ● </span></Link>
+
+            <Link className="small-text">Langue</Link>
           </div>
 
-          <p>© 2023 INSTAGRAM PAR META</p> */}
+          <p className="small-text">© 2023 INSTAGRAM PAR META</p>
         </div>
       </div>
     </div>
