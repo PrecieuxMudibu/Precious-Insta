@@ -1,0 +1,278 @@
+:root {
+    --grey : #262626;
+    --grey2: #DBDBDB;
+    --grey3: #8E8E92;
+    --grey4: #C7C7C7;
+    --blueDisable : #b5E2FF;
+    --blue: #0095F6;
+
+    --size14: 1.4rem;
+    --size16: 1.6rem;
+    --smallSize: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    border: 1px solid green;
+    display: none;
+}
+
+.text-bold {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.button {
+    background: none;
+    border: none;
+    color:var(--blue) ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disable {
+    color:var(--blueDisable) ;
+}
+
+.grey {    
+    color:var(--grey3);
+}
+
+
+
+
+
+
+/* ////////////////////// */
+
+.home {
+   display: flex; 
+}
+
+.home__left {
+    height: 100vh;
+    padding-top:3% ;
+    padding-left:1.5% ;
+    color:var(--grey);
+    background-color: white;
+}
+
+.home__logo > img {
+    /* font-size: 2rem; */
+    width: 45%;
+}
+
+.publication__number-of-like {
+    font-weight: bold;
+    margin: 2% 0;
+}
+.home__link:hover .home__link-icon {
+    transform: scale(1.05);
+}
+
+.home__link-icon {
+    font-size: 1.6rem;
+}
+
+.home__link > span {
+    margin-left: 1rem;
+}
+
+.home__right {
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    /* grid-template-columns: 85% 55%; */
+}
+
+.home__publications {
+    width: 50%;
+    height: 100vh;
+    overflow-x: scroll;
+}
+
+.home__header {
+    border: 1px solid var(--grey2);
+    border-radius: .5rem; 
+    padding: 1rem;
+    height: 20vh;
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: white;
+    margin-top: 3rem;
+
+}
+
+
+
+
+.current-user {
+    margin-top: 3rem;
+
+    width: 40%;
+    font-size: .9rem;
+    
+    height: fit-content;
+   
+}
+
+.current-user__infos {
+    display: flex;
+    padding:4% 1rem;
+    border: 1px solid var(--grey2);
+    border-radius: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+.current-user__infos img {
+    display: block;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 100%;
+}
+
+.current-user__name {
+    width: 55%;
+}
+
+.current-user__name :first-child {
+    font-weight: bold;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 0;
+}
+
+.current-user__suggestions {
+    border: 1px solid var(--grey2);
+    border-radius: .5rem;
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.current-user__suggestions-title {
+    font-weight: bold;
+    color: var(--grey3);
+}
+
+.current-user__suggestions  button {
+    background: none;
+    border: none;
+    font-size: .9rem;
+    font-weight: bold;
+} 
+
+.suggested-contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem 0;
+
+
+}
+
+.suggested-contacts > img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.suggested-contacts > div {
+    width:70%;
+}
+
+.suggested-contacts__name {
+    font-weight: bold;
+    
+}
+
+.current-user__links {
+    margin: 1rem 0;
+}
+
+.current-user__links > * {
+    text-decoration: none;
+}
+
+.current-user__links span {
+    font-size: 8px;
+
+}
+
+.small-text {    
+    color:var(--grey4);
+    font-size: .8rem;
+}
+
+.instagram {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .home__left {
+        width: 5rem;
+        padding-left: 0;
+    }
+
+    .home__publications {
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .current-user {
+        display: none;
+    }
+
+    .home__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .instagram {
+        display: block;
+    }
+
+    .home__logo > img {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .home {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    
+    .home__header {
+         margin-top: 6rem;
+     }
+    
+     .home__logo {
+        display: none;
+     }
+
+     .home__left {
+        width: 100%;
+     }
+    .home__left > ul {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .home__right {
+        width: 100%;
+    }
+}
