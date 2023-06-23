@@ -1,2 +1,33 @@
 # **Precious-Insta**
+
 It is a clone of the home interface of instagram.
+
+## Installation
+
+First clone this repo. Open your terminal and type :
+
+```bash
+git clone https://github.com/PrecieuxMudibu/Precious-Insta.git
+```
+
+Once done, go to the project folder by typing :
+
+```bash
+cd Precious-Insta
+```
+
+## Install dependencies
+
+```bash
+npm i
+```
+
+## Start the project
+
+```bash
+npm run start
+```
+
+## Authors
+
+[Precieux Mudibu](https://github.com/PrecieuxMudibu)
