@@ -16,7 +16,7 @@ Once done, go to the project folder by typing :
 cd Precious-Insta
 ```
 
-## Install dependencies
+## Install dependancies
 
 ```bash
 npm i
@@ -30,4 +30,4 @@ npm run start
 
 ## Authors
 
-[Precieux Mudibu](https://github.com/PrecieuxMudibu)
+[Précieux Mudibu](https://github.com/PrecieuxMudibu)
